@@ -17,20 +17,19 @@ h1 {
 .sketchcont {
     display: grid;
     margin: auto;
-    border: 1px solid;
-    width: 80%;
-    height: 500px;
-    grid-template-columns: repeat(16, 1fr);
-    grid-template-rows: repeat(auto-fit, 1fr);
+    border: .5px solid rgb(255, 69, 69);
+    width: 600px;
+    height: 600px;
+    grid-template-columns: repeat(var(--grid-columns), 1fr);
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
     background-color: white;
 }
 
 .sketchcell {
-    display: inline-block;
+    display: grid;
     transition-duration: .5s;
     transition-timing-function: linear;
     color: white;
-    border: .5px solid;
 }
 
 .sketchcell:hover {

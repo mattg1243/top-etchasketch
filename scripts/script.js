@@ -6,7 +6,7 @@ const sketchCell = document.querySelector('.sketchcell');
 function setGrid(rows, columns) {
 
     sketchCont.style.setProperty('--grid-rows', rows);
-    sketchCont.style.setProperty('--grid-rows', columns);
+    sketchCont.style.setProperty('--grid-columns', columns);
     
     for (let i = 0; i < (rows * columns) ; i++) {
         sketchCont.appendChild(sketchCell);
@@ -17,4 +17,4 @@ function setGrid(rows, columns) {
     }
 }
 
-setGrid(16, 16);
+setGrid(32, 32);
