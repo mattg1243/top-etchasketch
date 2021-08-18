@@ -30,8 +30,11 @@ h1 {
     transition-duration: .5s;
     transition-timing-function: linear;
     color: white;
+    
 }
-
+/*
 .sketchcell:hover {
     background-color: black;
+    transition-duration: .5s;
+    transition-timing-function: ease-out;
 }
