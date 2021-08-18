@@ -32,6 +32,23 @@ h1 {
     color: white;
     
 }
+
+#settings {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    
+}
+
+main {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 auto;
+}
 /*
 .sketchcell:hover {
     background-color: black;

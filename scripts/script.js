@@ -1,14 +1,29 @@
 const body = document.querySelector('body')
 const sketchCont = document.querySelector('#sketchcont');
 const sketchCell = document.querySelector('#cellOrigin');
+const allCells = document.querySelectorAll('.sketchcell')
+const resetButton = document.querySelector('#reset')
 
+resetButton.onclick = () => reset();
 
-function changeColor(e) {
-    e.target.style.backgroundColor = 'black';
+let drawingColor = '#333333';
+
+function draw(e) {
+    e.target.style.backgroundColor = drawingColor;
+}
+
+function reset() {
+    let newsize = prompt('How big would you like your new grid?');
+    setGrid(newsize, newsize);
+    clearGrid();
+}
+
+function changeColor(newColor) {
+    drawingColor = newColor;
 }
 
 function clearGrid() {
-    allCells.style.setProperty('background-color', 'white');
+    allCells.forEach(cell => cell.style.setProperty('background-color', 'white'));
 }
 
 function setGrid(rows, columns) {
@@ -19,17 +34,10 @@ function setGrid(rows, columns) {
     for (let i = 0; i < (rows * columns) ; i++) {
         const newcell = document.createElement('div');
         newcell.setAttribute('class', 'sketchCell');
-        newcell.addEventListener('mouseover', changeColor)
+        newcell.addEventListener('mouseover', draw)
         sketchCont.appendChild(newcell);
     }
 }
 
-function changeColor(e) {
-    e.target.style.backgroundColor = 'black';
-}
-
-function clearGrid() {
-    allCells.style.setProperty('background-color', 'white');
-}
 
 setGrid(32, 32);
