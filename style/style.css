@@ -6,7 +6,7 @@
 h1 {
     display: flex;
     justify-content: center;
-    padding: 10px;
+
 }
 
 .maintitle {
@@ -17,6 +17,7 @@ h1 {
 .sketchcont {
     display: grid;
     margin: auto;
+    margin-top: 15px;
     border: .25px thin rgb(255, 69, 69);
     width: 600px;
     height: 600px;
