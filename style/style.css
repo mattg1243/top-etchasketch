@@ -6,7 +6,7 @@
 h1 {
     display: flex;
     justify-content: center;
-    padding: 25px;
+    padding: 10px;
 }
 
 .maintitle {
@@ -17,9 +17,10 @@ h1 {
 .sketchcont {
     display: grid;
     margin: auto;
-    border: .5px solid rgb(255, 69, 69);
+    border: .25px thin rgb(255, 69, 69);
     width: 600px;
     height: 600px;
+    padding: 25x;
     grid-template-columns: repeat(var(--grid-columns), 1fr);
     grid-template-rows: repeat(var(--grid-rows), 1fr);
     background-color: white;
@@ -31,6 +32,10 @@ h1 {
     transition-timing-function: linear;
     color: white;
     
+}
+
+.white {
+    color: white !important;
 }
 
 #settings {

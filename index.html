@@ -9,6 +9,7 @@
     <!--Google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Palette+Mosaic&family=Roboto:wght@100&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="style/style.css">
@@ -18,17 +19,12 @@
 <body>
 
     <h1 class="maintitle">Etch-A-Sketch!</h1>
-    <main>
-    <div id='settings'>
-        <input type="color" id="colorpicker">
-        <button id="reset">Reset</button>
-        <button id="rancolor">Random Color</button>
-    </div>
-    <div id='sketchcont' class="sketchcont">
-        
-        <div id="cellOrigin" class="sketchcell"></div>
 
+    <div id='settings'>
+        <a id="reset" class="waves-effect waves-light red lighten-1 btn"><i class="material-icons left">restart_alt</i>Shake</a>
     </div>
-    </main>
+    
+    <div id='sketchcont' class="sketchcont z-depth-5"></div>
+
 </body>
 </html>
